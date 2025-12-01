@@ -17,10 +17,10 @@ Chaque jour est traité comme un mini-projet indépendant, implémenté en **Typ
 ## 🏆 Progression
 
 | Jour | Challenge | Étoiles | Solution | Sujets abordés |
-|:---:|:---|:---:|:---:|
-| 01 | [Secret Entrance](https://adventofcode.com/2025/day/1) | ⭐⭐ | [Voir code](./001/) |
-| 02 | *À venir...* | | |
-| ... | | | |
+|:---:|:---|:---:|:---:|:---|
+| 01 | [Secret Entrance](https://adventofcode.com/2025/day/1) | ⭐⭐ | [Voir code](./001/) | Parsing, Simulation, Maths (Modulo) |
+| 02 | *À venir...* | | | |
+| ... | | | | |
 
 ## 🏗 Architecture & Structure
 
