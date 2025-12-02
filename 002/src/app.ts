@@ -7,13 +7,17 @@ const main = (): void => {
     for (const ids of idsRangeArray) {
         const extremum = ids.split("-");
         let rangeLength = 0;
+        let firstId = 0;
+        let secondId = 0;
 
         if (extremum[0] && extremum[1]) { 
-            rangeLength = parseInt(extremum[1], 10) - parseInt(extremum[0], 10) + 1;
+            firstId = parseInt(extremum[0], 10);
+            secondId = parseInt(extremum[1], 10);
+            rangeLength = secondId - firstId + 1;
         }
 
         for (let i = 0; i < rangeLength; i++) {
-            const id = rangeLength + i;
+            const id = firstId + i;
             const stringId = id.toString();
             const length = stringId.length;
 
