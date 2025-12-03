@@ -16,11 +16,12 @@ Chaque jour est traité comme un mini-projet indépendant, implémenté en **Typ
 
 ## 🏆 Progression
 
-| Jour | Challenge | Étoiles | Solution | Sujets abordés |
-|:---:|:---|:---:|:---:|:---|
-| 01 | [Secret Entrance](https://adventofcode.com/2025/day/1) | ⭐⭐ | [Voir code](./001/) | Parsing, Simulation, Maths (Modulo) |
-| 02 | [Gift Shop](https://adventofcode.com/2025/day/2) | ⭐⭐ | [Voir code](./002/) | Manipulation de Chaînes, Structures de données (Listes/Maps) |
-| ... | | | | |
+| Jour | Challenge | Étoiles | Solution |
+|:---:|:---|:---:|:---:|
+| 01 | [Secret Entrance](https://adventofcode.com/2025/day/1) | ⭐⭐ | [Voir code](./001/) |
+| 02 | [Gift Shop](https://adventofcode.com/2025/day/2) | ⭐⭐ | [Voir code](./002/) |
+| 03 | [Lobby](https://adventofcode.com/2025/day/3) | ⭐⭐ | [Voir code](./003/) |
+| ... | | | |
 
 ## 🏗 Architecture & Structure
 
