@@ -11,13 +11,14 @@ const main = async () => {
         let tens = 0;
         let units = 0;
         let index = 0;
+        let square = 11;
 
         for (let i = 0; i < blank.length - 1; i++) {
-            let actualNb = parseInt(blank[i] || "0", 10);
+            let actualJolt = parseInt(blank[i] || "0", 10);
 
-            if (actualNb > tens) {
-                tens = actualNb;
-                index = i +1;
+            if (actualJolt > tens) {
+                tens = actualJolt;
+                index = i + 1;
 
                 if (tens === 9) break;
             }
@@ -26,10 +27,10 @@ const main = async () => {
         const rightSide = blank.slice(index);
 
         for (let i = 0; i < rightSide.length; i++) {
-            let actualNb = parseInt(rightSide[i] || "0", 10);
+            let actualJolt = parseInt(rightSide[i] || "0", 10);
 
-            if (actualNb > units) {
-                units = actualNb;
+            if (actualJolt > units) {
+                units = actualJolt;
 
                 if (units === 9) break;
             }
@@ -38,16 +39,36 @@ const main = async () => {
         silverJoltage += (tens * 10) + units;
 
         let counter = blank.length - 11;
+        let counter2 = 0;
+        let jolt: number[] = [0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0];
+        index = 0;
 
         for (let i = 0; i < counter; i++) {
-            counter--;
+            let actualJolt = parseInt(blank[i] || "0", 10);
 
+            if (actualJolt > (jolt[i] || 0)) {
+                jolt[counter2] = actualJolt;
+                index = i + 1;
+            }
 
+            if (i === counter - 1) counter2 += 1;
+            
+                console.log(counter2)
+
+            if (i === counter - 1 && jolt[11] === 0) {
+                counter += 1;
+                i = index;
+            }
         }
 
+        for (let i = 0; i < 12; i++) {
+            goldJoltage += Math.pow(10, square) * (jolt[i] || 0);
+            square -= 1;
+        }
     }
 
     console.log(`Total output for silverJoltage : ${silverJoltage}`);
+    console.log(`Total output for goldJoltage : ${goldJoltage}`);
 }
 
 main();
